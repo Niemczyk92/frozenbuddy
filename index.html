@@ -30,10 +30,17 @@
     }
 
     .logo {
-      max-width: 160px;
-      margin: 0 auto 3rem auto;
-      display: block;
-    }
+  max-width: 220px;
+  width: 100%;
+  margin: 0 auto 3rem auto;
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    max-width: 280px;
+  }
+}
 
     h1 {
       font-size: 2.6rem;
@@ -69,7 +76,6 @@
 <body>
   <div class="container">
     <img src="frozenbuddy-logo.svg" alt="FrozenBuddy logo" class="logo">
-    <h1>FrozenBuddy</h1>
     <p>Modern thermal mugs made for real life. Simple. Durable. Beautiful.</p>
     <p>We are preparing our first product – built to keep your drink hot or cold all day.</p>
     <p>Thanks for stopping by early. We can’t wait to show you more.</p>

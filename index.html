@@ -1,70 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>FrozenBuddy – Smart Thermal Mugs</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
+    :root {
+      --bg: #ffffff;
+      --text: #111111;
+      --gray: #666666;
+      --highlight: #000000;
+    }
+
     body {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 2rem;
+      padding: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 4rem auto;
+      padding: 0 1.5rem;
       text-align: center;
     }
 
     .logo {
       max-width: 160px;
-      margin-bottom: 2rem;
+      margin: 0 auto 3rem auto;
+      display: block;
     }
 
     h1 {
-      font-size: 2.5rem;
-      color: #0077b6;
+      font-size: 2.6rem;
+      font-weight: 500;
+      margin-bottom: 1rem;
     }
 
     p {
-      max-width: 600px;
-      font-size: 1.2rem;
-      margin: 1rem auto;
-    }
-
-    .highlight {
-      font-weight: bold;
-      color: #0077b6;
+      margin-bottom: 1.5rem;
+      color: var(--gray);
     }
 
     .discount {
-      background: #0077b6;
-      color: white;
       display: inline-block;
-      padding: 0.8rem 1.4rem;
-      margin: 1.5rem 0;
-      border-radius: 8px;
-      font-size: 1.1rem;
-      letter-spacing: 0.5px;
+      margin-top: 2rem;
+      padding: 0.8rem 1.6rem;
+      border: 1px solid #111;
+      font-weight: 500;
+      color: #111;
+      border-radius: 999px;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 0.05rem;
     }
 
     footer {
-      margin-top: 3rem;
-      font-size: 0.9rem;
-      color: #777;
+      margin-top: 4rem;
+      font-size: 0.85rem;
+      color: #999;
     }
   </style>
 </head>
 <body>
-  <img src="frozenbuddy-logo.svg" alt="FrozenBuddy Logo" class="logo">
-  <h1>FrozenBuddy</h1>
-  <p><span class="highlight">Stylish. Sustainable. Smart.</span></p>
-  <p>We are FrozenBuddy – a brand focused on high-quality, minimalist thermal mugs that fit your everyday life.</p>
-  <p>Whether you're sipping hot coffee on your commute or cold water on a summer hike, our mugs are built to last – and look great doing it.</p>
-  <p>We're currently preparing our first product launch. Thank you for visiting – you're early, and we love that.</p>
-  <div class="discount">Use code <strong>FBLAUNCH25</strong> for 25% off your first order</div>
-  <p>Stay tuned. Something cool is coming soon ❄️</p>
-  <footer>&copy; 2025 FrozenBuddy. All rights reserved.</footer>
+  <div class="container">
+    <img src="frozenbuddy-logo.svg" alt="FrozenBuddy logo" class="logo">
+    <h1>FrozenBuddy</h1>
+    <p>Modern thermal mugs made for real life. Simple. Durable. Beautiful.</p>
+    <p>We are preparing our first product – built to keep your drink hot or cold all day.</p>
+    <p>Thanks for stopping by early. We can’t wait to show you more.</p>
+    <div class="discount">Use code <strong>FBLAUNCH25</strong> to get 25% off your first order</div>
+    <footer>&copy; 2025 FrozenBuddy</footer>
+  </div>
 </body>
 </html>
